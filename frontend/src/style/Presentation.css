@@ -1,0 +1,30 @@
+
+
+.prentdiv{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin: 60px;
+    
+}
+.para_prese{
+    /* text-indent: 50px; */
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 35px;
+  font-family:Helvetica ;
+  font-weight: bold;
+  color: #6b6b6b;
+}
+.sousi{
+ border-radius: 20px;
+}
+.stitre{
+    text-transform: uppercase;
+    color: #4CAF50;
+}
+.vid_pres{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}

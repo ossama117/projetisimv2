@@ -1,0 +1,119 @@
+body{
+  font-family: Helvetica;
+  /* background-color: rgba(128, 128, 128, 0.384); */
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 300px;
+    align-items: center;
+    background: #055ca2;
+    height: 5%;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 15px;
+    
+   
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding-left: 60px;
+    text-decoration: none;
+    color: white;
+}
+.a{
+    text-decoration: none; 
+    position: relative;
+    color: rgba(255, 255, 255, 0.664);
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 40px;
+    font-family: Monospace;
+}
+.a::before{
+    content: '';
+    position:absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: 0.3s;
+}
+.a:hover::before{
+    width: 100%;
+    
+}
+.a:hover{
+    color: white;
+    transition: 0.3s;
+}
+.a:focus{
+    color: white;
+}
+.isim {
+    margin-left: 10px;
+}
+.toggle-btn{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .logo{
+        margin-left: -50px;
+    }
+    .isim{
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 150%;
+        /* height: 300px; */
+    }
+
+    .nav-item {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .toggle-btn {
+        margin-right: 220px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        color: white;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+    }
+
+    .navbar.open .nav-item {
+        display: flex !important;
+        align-items: start;
+        margin-top: -270px;
+        margin-left: -50px;
+    }
+    .navbar.open .nav-item>.a{
+        margin-bottom: 15px;
+    }
+    .navbar.open .nav-item>.a{
+        margin-bottom: 15px;
+    }
+    .respo{
+        display: flex;
+        gap: 240px;
+        align-items: center;
+    }
+    
+    
+}

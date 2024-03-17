@@ -1,0 +1,9 @@
+npm i react-router-dom
+npm i react-inframe
+npm i react-spring
+npm install react-icons 
+
+
+acc emailjs:
+ossamavalo@gmail.com
+aqzsedrf22072000
