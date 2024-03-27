@@ -18,9 +18,17 @@ function Number({ n }) {
   return <animated.div>{number.to((n) => n.toFixed(0))}</animated.div>;
 }
 const slides = [
-  { url: "img1.jpg", title: "beach" },
-  { url: "img2.jpg", title: "boat" },
-  { url: "img3.jpg", title: "forest" },
+  {
+    url: "img1.jpg",
+    description: "Description of image 1",
+    link: "https://www.myway.ac.ma/ar/filieres",
+  },
+  {
+    url: "img2.jpg",
+    description: "Description of image 2",
+    link: "https://www.myway.ac.ma/ar/filieres",
+  },
+  { url: "img3.jpg" },
 ];
 const containerStyles = {
   // width: "700px",
@@ -63,10 +71,10 @@ export default function Home() {
           <h1>
             <Number n={Statistique.niv_fromation} />
           </h1>
-          <h3>Stagiaires en formation</h3>
+          <h3>Niveaux de formation</h3>
         </div>
       </div>
-      <h1 className="h1">Formatios diplômantes:</h1>
+      <h1 className="h1">Les Formationes:</h1>
       <div className="foramtion">
         <div className="card">
           <h2>TECHNICIEN SPECIALISE</h2>
@@ -113,7 +121,6 @@ export default function Home() {
           <h1 className="title_vid">ScholarVox:</h1>
           <div className="hous1">
             <iframe
-             
               src="https://www.youtube.com/embed/pGaoJ-BEaNI?si=Bfv76rzo40Jv9txl"
               title="YouTube video player"
               frameborder="0"
@@ -147,7 +154,6 @@ export default function Home() {
           <div>
             <h1 className="title_vid">My Way :</h1>
             <iframe
-
               src="https://www.youtube.com/embed/pNSRdhTuSSs?si=ep1zNDuzi92Ncn20"
               title="YouTube video player"
               frameborder="0"

@@ -40,6 +40,7 @@ function Timetable() {
       <input
         type="text"
         placeholder="Recherche par groupe"
+        className="input-search"
         value={namegroupe}
         onChange={handleGroupChange}
       />

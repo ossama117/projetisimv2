@@ -3,14 +3,14 @@ import "../style/ImageSlider.css";
 
 const leftArrowStyles = {
   fontSize: "45px",
-  color: "#000",
+  color: "#fff",
   zIndex: 1,
   cursor: "pointer",
 };
 
 const rightArrowStyles = {
   fontSize: "45px",
-  color: "#000",
+  color: "#fff",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -52,48 +52,43 @@ const ImageSlider = ({ slides }) => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(goToNext, 6000); // Change slide every 6 seconds
+    const intervalId = setInterval(goToNext, 6000);
 
-    return () => clearInterval(intervalId); // Cleanup on component unmount
+    return () => clearInterval(intervalId);
   }, [currentIndex]);
 
-  const slideStylesWidthBackground = {
-    // ... (other styles)
-  };
-
   return (
-    <div className="sliderStyles">
-      <div className="insrer">
-        <h1>BIENVENUE AU Institut Spécialisé Industriel Marrakech ISIM</h1>
-        <a
-          href="https://takwine.ofppt.ma/ERP_OFPPT/Inscription.aspx"
-          target="blank"
-        >
-          <button className="button">s'insrer</button>
-        </a>
-      </div>
+    <div style={sliderStyles}>
       <div>
         <div className="image">
-          <div onClick={goToPrevious} style={leftArrowStyles}>
-            ❰
-          </div>
-          <div style={slideStylesWidthBackground}>
-            <img
-              src={slides[currentIndex].url}
-              alt=""
-              width="700px"
-              height="390px"
-              className="img"
-            />
-          </div>
-          <div onClick={goToNext} style={rightArrowStyles}>
-            ❱
+          <div
+            className="slide"
+            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+          >
+            <div onClick={goToPrevious} style={leftArrowStyles}>
+              ❰
+            </div>
+            <div onClick={goToNext} style={rightArrowStyles}>
+              ❱
+            </div>
+            <div className="description-container">
+              <p className="description">{slides[currentIndex].description}</p>
+              {slides[currentIndex].description && (
+                <a
+                  className="button"
+                  href={slides[currentIndex].link}
+                  target="blank"
+                >
+                  En savoir plus
+                </a>
+              )}
+            </div>
           </div>
         </div>
-        <div style={dotsContainerStyles} >
+        <div style={dotsContainerStyles}>
           {slides.map((slide, slideIndex) => (
             <div
-            className="dot"
+              className="dot"
               style={dotStyle}
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}

@@ -1,0 +1,56 @@
+.p_form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+    gap: 100px;
+  }
+  
+  select {
+  
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding-right: 420px;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #4ca049;
+  }
+  
+  /* Styles for the options */
+  option {
+    
+    padding: 5px;
+  }
+  option:hover {
+    background-color: #f0f0f0;
+  }
+ .inputnumber{
+  width: 500px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+ }
+ .inputsubmi{
+  background-color: #0f7cd6d8;
+    color: white;
+    border: none;
+    padding: 9px;
+    font-size: 16px;
+    margin-bottom: 15px;
+   
+    
+    width: 150px;
+    border-radius: 5px;
+  
+ }
+ .inputsubmi:hover{
+  background-color: #0f7cd6;
+
+ }

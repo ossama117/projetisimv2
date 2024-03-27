@@ -83,8 +83,6 @@ export default function Login() {
           Forgot your password?
         </a>
       </form>
-      {values.name}
-      {values.password}
     </div>
   );
 }

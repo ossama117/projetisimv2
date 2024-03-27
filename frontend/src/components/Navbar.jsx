@@ -30,13 +30,13 @@ export default function Navbar() {
           Présentation
         </Link>
         <Link to="/timetable" className="a">
-          Emploi
+          Emploi du temps
         </Link>
         <Link to="/login" className="a">
           Stagiaire
         </Link>
-        <Link to="/services" className="a">
-          Services
+        <Link to="/entreprise" className="a">
+          Espace des Entreprises
         </Link>
         <Link to="/contact" className="a">
           Contact

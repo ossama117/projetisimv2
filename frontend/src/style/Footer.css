@@ -1,12 +1,15 @@
-.Footer{
+.Footer {
     background: #055ca2;
     margin-left: -8px;
     margin-right: -8px;
     margin-bottom: -8px;
+    margin-top: 20px;
 }
-.socials{
+
+.socials {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -16,16 +19,19 @@
     justify-content: center;
     gap: 10px;
     padding: 25px;
-    
+
 }
-.menu_footer .spantem{
+
+.menu_footer .spantem {
     color: rgba(255, 255, 255, 0.61);
     font-weight: bold;
 }
-.menu_footer .spantem:hover{
+
+.menu_footer .spantem:hover {
     color: rgb(255, 255, 255);
     font-weight: bold;
 }
+
 .btn-social {
     background: transparent;
     position: relative;
@@ -36,61 +42,64 @@
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    border: 1px solid #0163E0;
+    border: 2px solid #fff;
     border-radius: 25px;
     outline: none;
     overflow: hidden;
-    color: #0163E0;
+    color: #fff;
     transition: color 0.3s 0.1s ease-out;
     text-align: center;
-  }
-  
+}
+
 .btn-social svg {
-fill: #0163E0;
-height: 25px;
-width: 25px;
+    fill: #fff;
+    height: 25px;
+    width: 25px;
 }
 
 .btn-social span {
-margin: 10px;
+    margin: 10px;
 }
 
 .btn-social::before {
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-content: '';
-border-radius: 50%;
-display: block;
-width: 20em;
-height: 20em;
-left: -5em;
-text-align: center;
-transition: box-shadow 0.5s ease-out;
-z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
 }
 
 .btn-social:hover {
-color: #fff;
-border: 1px solid #0163E0;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #0163E0;
 }
 
 .btn-social:hover svg {
-fill: currentColor;
+    fill: currentColor;
 }
 
 .btn-social:hover::before {
-box-shadow: inset 0 0 0 10em #0163E0;
+    box-shadow: inset 0 0 0 10em #0163E0;
 }
-a{
-text-decoration: none;
+
+a {
+    text-decoration: none;
 }
-.copyright{
-display: flex;
-justify-content: center;
-margin-top: 20px;
-color: white;
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: white;
 }
